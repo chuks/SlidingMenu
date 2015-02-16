@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.jeremyfeinstein.slidingmenu.lib.SlidingMenu xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/slidingmenumain"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" />
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <com.jeremyfeinstein.slidingmenu.lib.SlidingMenu 
+        android:id="@+id/slidingmenumain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+            
+</LinearLayout>        
